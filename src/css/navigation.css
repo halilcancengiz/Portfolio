@@ -1,0 +1,68 @@
+.openBtn {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  font-size: 1.5rem;
+  z-index: 2;
+  color: #42aac9;
+  transition: all 0.5s ease;
+}
+.openBtn:hover {
+  font-size: 1.7rem;
+}
+.overlay {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  z-index: 3;
+  overflow-x: hidden;
+  transition: all 0.5s ease;
+  background: url(../images/menu.jpg) center;
+}
+.closeBtn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 32px;
+  color: #42aac9;
+}
+.closeBtn:hover {
+  color: white;
+  transition: all 0.5s ease;
+  font-size: 37px;
+}
+/* navbar start */
+#navbar {
+  font-size: 2rem;
+  transition: all 1s ease;
+}
+#navbar ul {
+  padding: 0 !important;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.7s s;
+}
+#navbar ul li {
+  margin: 20px;
+  text-align: center;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 30px;
+}
+#navbar ul li a i {
+  margin-right: 20px;
+}
+
+#navbar ul li a:hover {
+  font-size: 2.5rem;
+  color: white;
+}

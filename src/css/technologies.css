@@ -1,0 +1,42 @@
+#card img {
+  width: 75px;
+  height: 75px;
+}
+.technologiesCard {
+  background-color: #20293a;
+  height: 200px;
+  width: 200px;
+  margin: 21px;
+  transform: rotate(45deg);
+  position: relative;
+  padding: 0;
+  box-shadow: 5px 5px 50px black;
+}
+#card {
+  position: fixed;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  transform: rotate(315deg);
+  transition: all 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: transparent;
+  font-size: 1.2rem;
+  background-color: transparent;
+}
+#card:hover {
+  transform: rotate(675deg);
+  color: white;
+  background-color: #3359a4;
+  box-shadow: 10px 10px 35px black;
+  border-radius: 20px;
+}
+/* #technologies{
+  margin-bottom: 100px;
+} */
+#technologiesCardContainer {
+  margin-bottom: 100px;
+}
