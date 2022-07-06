@@ -9,7 +9,9 @@ const MyProject = () => {
       .then((data) => setGetData(data))
   }, []);
 
+
   console.log(getData);
+
 
   return (
     <>
@@ -22,7 +24,6 @@ const MyProject = () => {
           ></div>
         </div>
         <div className="mx-auto">
-          <img src={getData.avatar_url} alt="" />
         </div>
       </section>
       ;

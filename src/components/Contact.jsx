@@ -22,7 +22,7 @@ const Contact = () => {
             </p>
             <div className="d-flex flex-row align-items-center mt-3">
               <i className="fa-solid fa-phone"></i>
-              <span>Phone: 0538 770 80 40</span>
+              <span>Phone:</span>
             </div>
             <div className="d-flex flex-row align-items-center mt-2">
               <i className="fa-solid fa-envelope"></i>
@@ -51,26 +51,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-{
-  /* <div id="footerInfo" className="w-100">
-<div className="row text-center w-100 m-0">
-
-  <div className="col-lg-4 d-flex align-items-center justify-content-center flex-column">
-    
-    <p>538 770 80 40</p>
-  </div>
-
-  <div className="col-lg-4 d-flex align-items-center justify-content-center flex-column">
-    
-    <p>hllcncngz1@gmail.com</p>
-  </div>
-
-  <div className="col-lg-4 d-flex align-items-center justify-content-center flex-column">
-    
-    <p>Türkiye / Düzce</p>
-  </div>
-
-</div>
-</div> */
-}
