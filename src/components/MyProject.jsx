@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "../css/myProject.css";
+import axios from "axios";
 
 const MyProject = () => {
   const [getData, setGetData] = useState();
+
+  const getDataFromApi = async() => {
+    await axios.get("https://api.github.com/users/hllcncngz").then((res) => {
+      setGetData(res.data);
+    });
+  };
   useEffect(() => {
-    fetch("https://api.github.com/users/hllcncngz")
-      .then((res) => res.json())
-      .then((data) => setGetData(data))
+    getDataFromApi();
   }, []);
 
-
-  console.log(getData);
 
 
   return (
@@ -20,11 +23,9 @@ const MyProject = () => {
           <h3>MY PROJECT</h3>
           <div
             className="headingBorder bg-dark"
-            style={{ width: "250px", height: 50 }}
           ></div>
         </div>
-        <div className="mx-auto">
-        </div>
+        <div className="mx-auto"></div>
       </section>
       ;
     </>

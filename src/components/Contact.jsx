@@ -8,7 +8,6 @@ const Contact = () => {
           <h3 className="text-white">CONTACT ME</h3>
           <div
             className="headingBorder bg-white"
-            style={{ width: "250px", height: 50 }}
           ></div>
         </div>
         <div className="container" id="contactContainer">

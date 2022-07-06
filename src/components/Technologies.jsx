@@ -28,7 +28,6 @@ const Technologies = () => {
           <h3>TECHNOLOGIES</h3>
           <div
             className="headingBorder bg-dark"
-            style={{ width: "250px", height: 50 }}
           ></div>
         </div>
 
