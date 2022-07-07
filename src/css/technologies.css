@@ -1,3 +1,6 @@
+#technologies {
+  background-color: aliceblue;
+}
 #card img {
   width: 75px;
   height: 75px;
@@ -37,6 +40,6 @@
 /* #technologies{
   margin-bottom: 100px;
 } */
-#technologiesCardContainer {
-  margin-bottom: 100px;
+#technologiesCardContainer{
+  padding-bottom:110px !important;
 }

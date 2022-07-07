@@ -24,14 +24,14 @@ const Technologies = () => {
     <>
       <div id="technologies">
 
-        <div className="heading pb-5 d-flex align-items-center justify-content-center  flex-column">
+        <div className="heading d-flex align-items-center justify-content-center  flex-column">
           <h3>TECHNOLOGIES</h3>
           <div
             className="headingBorder bg-dark"
           ></div>
         </div>
 
-        <div className="p-5" id="technologiesCardContainer">
+        <div id="technologiesCardContainer">
           <div className="row container mx-auto d-flex align-items-center justify-content-center">
             {technologiesCard.map((technology) => {
               return (
