@@ -35,7 +35,7 @@ const MyProject = () => {
                   <h3>React Photo Search App </h3>
                     <div className="headingBorder2 bg-dark"></div>
                     <a href="https://github.com/hllcncngz/Fotograflar-Projesi" data-toggle="tooltip" data-placement="top" title="Projeyi İncele">
-                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <i className="fa-solid fa-magnifying-glass"></i>
                     </a>
                     <div className="headingBorder bg-dark"></div>
                   </div>
@@ -52,7 +52,7 @@ const MyProject = () => {
                   <h3>Weather App Js</h3>
                     <div className="headingBorder2 bg-dark"></div>
                     <a href="https://github.com/hllcncngz/Weather" data-toggle="tooltip" data-placement="top" title="Projeyi İncele">
-                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <i className="fa-solid fa-magnifying-glass"></i>
                     </a>
                     <div className="headingBorder bg-dark"></div>
                   </div>
@@ -69,7 +69,7 @@ const MyProject = () => {
                     <h3>Bootstrap Instagram Clone</h3>
                     <div className="headingBorder2 bg-dark"></div>
                     <a href="https://github.com/hllcncngz/Bootstrap-Patika--dev/tree/master/%C4%B1nstagram-bootstrap" data-toggle="tooltip" data-placement="top" title="Projeyi İncele">
-                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <i className="fa-solid fa-magnifying-glass"></i>
                     </a>
                     <div className="headingBorder bg-dark"></div>
                   </div>

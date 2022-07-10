@@ -45,3 +45,20 @@
 #technologiesCardContainer {
   padding-bottom: 110px !important;
 }
+#searchTechnologyInput{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+#searchContainer i{
+  padding: 15px;
+}
+#searchTechnologyInput::placeholder{
+  text-align: center;
+  color: black;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, .5);
+}
+#searchContainer{
+  border-bottom: 1px solid black;
+  padding: 5px;
+}

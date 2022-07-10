@@ -6,7 +6,6 @@ const BackToTop = () => {
       var pageOffset =
           document.documentElement.scrollTop || document.body.scrollTop,
         backToTopDOM = document.getElementById("backToTop");
-      console.log(pageOffset);
       if (backToTopDOM)
         backToTopDOM.style.visibility =
           pageOffset >= 100 ? "visible" : "hidden";
@@ -19,7 +18,7 @@ const BackToTop = () => {
   return (
     <>
       <a id="backToTop" href="#home">
-      <i class="fa-solid fa-angles-up" data-toggle="tooltip" data-placement="top" title="Back To Top"></i>
+      <i className="fa-solid fa-angles-up" data-toggle="tooltip" data-placement="top" title="Back To Top"></i>
       </a>
     </>
   );
