@@ -32,9 +32,14 @@ const MyProject = () => {
                 <img className="imageOverlay" src={reactImage} alt="react" />
                 <div className="projectOverlay-1">
                   <div className="projectLink">
-                  <h3>React Photo Search App </h3>
+                    <h3>React Photo Search App </h3>
                     <div className="headingBorder2 bg-dark"></div>
-                    <a href="https://github.com/hllcncngz/Fotograflar-Projesi" data-toggle="tooltip" data-placement="top" title="Projeyi İncele">
+                    <a
+                      href="https://github.com/hllcncngz/Fotograflar-Projesi"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Projeyi İncele"
+                    >
                       <i className="fa-solid fa-magnifying-glass"></i>
                     </a>
                     <div className="headingBorder bg-dark"></div>
@@ -49,9 +54,14 @@ const MyProject = () => {
                 />
                 <div className="projectOverlay-2">
                   <div className="projectLink">
-                  <h3>Weather App Js</h3>
+                    <h3>Weather App Js</h3>
                     <div className="headingBorder2 bg-dark"></div>
-                    <a href="https://github.com/hllcncngz/Weather" data-toggle="tooltip" data-placement="top" title="Projeyi İncele">
+                    <a
+                      href="https://github.com/hllcncngz/Weather"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Projeyi İncele"
+                    >
                       <i className="fa-solid fa-magnifying-glass"></i>
                     </a>
                     <div className="headingBorder bg-dark"></div>
@@ -68,7 +78,12 @@ const MyProject = () => {
                   <div className="projectLink">
                     <h3>Bootstrap Instagram Clone</h3>
                     <div className="headingBorder2 bg-dark"></div>
-                    <a href="https://github.com/hllcncngz/Bootstrap-Patika--dev/tree/master/%C4%B1nstagram-bootstrap" data-toggle="tooltip" data-placement="top" title="Projeyi İncele">
+                    <a
+                      href="https://github.com/hllcncngz/Bootstrap-Patika--dev/tree/master/%C4%B1nstagram-bootstrap"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Projeyi İncele"
+                    >
                       <i className="fa-solid fa-magnifying-glass"></i>
                     </a>
                     <div className="headingBorder bg-dark"></div>
@@ -81,29 +96,33 @@ const MyProject = () => {
           {/* BottomSide Start */}
           <div id="bottomSide">
             <div className="row w-100">
-              <div className="githubCount d-flex align-items-center justify-content center flex-column col-md-4">
+              <div className="githubCount d-flex align-items-center justify-content-center flex-column col-md-4">
                 <div className="githubCountIcon">
                   <i className="fa-solid fa-person-walking-arrow-loop-left text-white"></i>
                 </div>
-                <div className="githubCountValue my-3">{getData.followers}</div>
-                <div className="githubCountDescription">Github Followers</div>
+                <div className="githubCountValue my-3 ">{getData.followers}</div>
+                <div className="githubCountDescription">
+                  Github<span>Followers</span>
+                </div>
               </div>
-              <div className="githubCount d-flex align-items-center justify-content center flex-column col-md-4">
+              <div className="githubCount d-flex align-items-center justify-content-center flex-column col-md-4">
                 <div className="githubCountIcon">
                   <i className="fa-solid fa-person-walking-arrow-right text-white"></i>
                 </div>
-                <div className="githubCountValue my-3">{getData.following}</div>
-                <div className="githubCountDescription">Github Following</div>
+                <div className="githubCountValue my-3 ">{getData.following}</div>
+                <div className="githubCountDescription">
+                  Github<span>Following</span>
+                </div>
               </div>
-              <div className="githubCount d-flex align-items-center justify-content center flex-column col-md-4">
+              <div className="githubCount d-flex align-items-center justify-content-center flex-column col-md-4">
                 <div className="githubCountIcon">
                   <i className="fa-solid fa-folder-open text-white"></i>
                 </div>
-                <div className="githubCountValue my-3">
+                <div className="githubCountValue my-3 ">
                   {getData.public_repos}
                 </div>
                 <div className="githubCountDescription">
-                  Github Public Repository
+                  Github<span>Public Repository</span>
                 </div>
               </div>
             </div>

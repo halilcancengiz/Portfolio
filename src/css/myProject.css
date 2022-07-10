@@ -18,6 +18,26 @@
 .githubCountIcon i {
   font-size: 30px;
 }
+.githubCountDescription{
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+}
+.githubCountDescription span{
+  font-weight: 400;
+}
+.githubCount{
+  background: linear-gradient(rgb(69, 92, 209,.3),rgb(69, 92, 209,.6));
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+  clip-path: polygon(0% 20%,50% 0%, 100% 20%, 100% 80%,50% 100%, 0% 80%);
+  transition: all .5s ease-in-out;
+}
+.githubCount:hover{
+  transform: scale(1.2);
+}
 #myProject {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
     url("../images/menu.jpg") center;

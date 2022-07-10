@@ -35,13 +35,13 @@ const Technologies = () => {
         <div id="technologiesCardContainer">
           <div className="row container mx-auto d-flex align-items-center justify-content-center">
             <div className="col-lg-12 d-flex align-items-center justify-content-center flex-row mb-5">
-              <div id="searchContainer">
+              <div id="searchContainer" className="rounded-pill">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input
                   onChange={(e) => setSearchTechnologyValue(e.target.value)}
                   type="text"
                   value={searchTechnologyValue}
-                  className=""
+                  className="text-white"
                   id="searchTechnologyInput"
                   placeholder="Search Technology"
                 />

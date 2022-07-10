@@ -1,5 +1,9 @@
+*{
+  font-family: "Roboto Condensed", sans-serif;
+}
 #technologies {
   background-color: rgb(231, 220, 220);
+
 
 }
 #card img {
@@ -15,6 +19,7 @@
   position: relative;
   padding: 0;
   box-shadow: 5px 5px 20px #2850ac;
+
 }
 #card {
   position: fixed;
@@ -30,6 +35,7 @@
   color: transparent;
   font-size: 1.2rem;
   background-color: transparent;
+
 }
 #card:hover {
   transform: rotate(675deg);
@@ -44,6 +50,7 @@
 } */
 #technologiesCardContainer {
   padding-bottom: 110px !important;
+
 }
 #searchTechnologyInput{
   border: none;
@@ -51,14 +58,19 @@
   background-color: transparent;
 }
 #searchContainer i{
-  padding: 15px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+  background-color: #04090F;
 }
 #searchTechnologyInput::placeholder{
   text-align: center;
-  color: black;
+  color: white;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, .5);
 }
 #searchContainer{
-  border-bottom: 1px solid black;
+  background-color: #132b61;
   padding: 5px;
+  box-shadow: 0px 5px 25px #2850ac;
 }
