@@ -1,14 +1,37 @@
 import React from "react";
 import "../css/contact.css";
+import * as alertify from "alertifyjs";
 const Contact = () => {
+  
+  let alertifyFonk = (e) => {
+    let contactNameValue = document.getElementById("name");
+    let contactEmailValue = document.getElementById("email");
+    let contactSubjectValue = document.getElementById("subject");
+    let contactMessageValue = document.getElementById("message");
+
+    if (
+      contactNameValue.value.trim().length === 0 ||
+      contactEmailValue.value.trim().length === 0 ||
+      contactSubjectValue.value.trim().length === 0 ||
+      contactMessageValue.value.trim().length === 0
+    ) {
+      alertify.error("Lütfen Tüm Belirtilen Alanları Doldurunuz",2);
+    } 
+    else {
+      contactNameValue.value = "";
+      contactEmailValue.value = "";
+      contactSubjectValue.value = "";
+      contactMessageValue.value = "";
+      alertify.success("Mesajınız Alınmıştır Teşekkürler",2);
+    }
+    e.preventDefault();
+  };
   return (
     <>
       <div className="bg-dark py-5" id="contact">
-      <div className="heading d-flex align-items-center justify-content-center  flex-column">
+        <div className="heading d-flex align-items-center justify-content-center  flex-column">
           <h3 className="text-white">CONTACT ME</h3>
-          <div
-            className="headingBorder bg-white"
-          ></div>
+          <div className="headingBorder bg-white"></div>
         </div>
         <div className="container" id="contactContainer">
           {/* ContactForm Start */}
@@ -35,13 +58,21 @@ const Contact = () => {
           {/* ContactForm End */}
 
           {/* contactDetails Start */}
-          <div id="contactForm">
-              <input type="text" placeholder="Your Name" />
-              <input type="email" placeholder="Your Email" />
-              <input type="text" placeholder="Subject" />
-              <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-              <button type="submit">Submit</button>
-          </div>
+
+          <form onSubmit={alertifyFonk} id="contactForm">
+            <input id="name" type="text" placeholder="Your Name" />
+            <input id="email" type="email" placeholder="Your Email" />
+            <input id="subject" type="text" placeholder="Subject" />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+
           {/* contactDetails End */}
         </div>
       </div>

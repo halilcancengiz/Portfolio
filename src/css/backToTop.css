@@ -4,10 +4,12 @@
     bottom: 4rem;
     right: 4rem;
     font-size: 2rem;
-    color: #3e588f;
+    color: linear-gradient(to top right,royalblue,black);
     transition: all 0.5s ease;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 50%;
   }
   #backToTop:hover {
-    color: #203562;
-    font-size: 35px;
+    font-size: 2.2rem;
   }

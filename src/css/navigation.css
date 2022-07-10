@@ -6,6 +6,7 @@
   z-index: 2;
   color: #42aac9;
   transition: all 0.5s ease;
+  padding: 10px 20px;
 }
 .openBtn:hover {
   font-size: 1.7rem;
@@ -21,7 +22,7 @@
   z-index: 3;
   overflow-x: hidden;
   transition: all 0.5s ease;
-  background: url(../images/menu.jpg) center;
+  background: url(../images/boris-stefanik-wxJscL5ZzDA-unsplash.jpg) center;
 }
 .closeBtn {
   position: absolute;
@@ -56,7 +57,11 @@
 #navbar ul li a {
   text-decoration: none;
   color: white;
-  padding: 30px;
+  padding: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  transition: all .3s ease-in-out;
+
+
 }
 #navbar ul li a i {
   margin-right: 20px;
@@ -65,4 +70,8 @@
 #navbar ul li a:hover {
   font-size: 2.5rem;
   color: white;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 35px white;
 }

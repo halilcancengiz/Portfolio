@@ -14,7 +14,7 @@ export default function Navigation() {
 
   return (
     <>
-      <a id="" onClick={openNav} href="#google" className="openBtn">
+      <a id="" onClick={openNav} href="#google" className="openBtn" data-toggle="tooltip" data-placement="top" title="Menu">
         <i className="fa fa-bars"></i>
       </a>
       {/* overlay Start */}
@@ -22,7 +22,7 @@ export default function Navigation() {
         id="nav"
         className="overlay d-flex align-items-center justify-content-center flex-column"
       >
-        <a onClick={closeNav} href="#google" className="closeBtn">
+        <a onClick={closeNav} href="#" className="closeBtn">
           <i className="fa fa-times"></i>
         </a>
         {/* <Clock /> */}

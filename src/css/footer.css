@@ -1,5 +1,8 @@
 #footerArea{
-  background-color: #09111e;
+  background-color: #060708;
+}
+#footerArea h6{
+  font-family: 'Roboto Condensed', sans-serif;
 }
 #footerArea ul li a {
   font-size: 2.5rem;
@@ -50,5 +53,4 @@
 }
 #footerInfo p{
     font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
 }

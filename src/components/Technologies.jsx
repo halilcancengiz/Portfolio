@@ -24,7 +24,7 @@ const Technologies = () => {
     <>
       <div id="technologies">
 
-        <div className="heading d-flex align-items-center justify-content-center  flex-column">
+        <div className="heading text-dark d-flex align-items-center justify-content-center pt-5  flex-column">
           <h3>TECHNOLOGIES</h3>
           <div
             className="headingBorder bg-dark"

@@ -1,19 +1,20 @@
 #technologies {
-  background-color: aliceblue;
+  background-color: rgb(231, 220, 220);
+
 }
 #card img {
   width: 75px;
   height: 75px;
 }
 .technologiesCard {
-  background-color: #20293a;
+  background-color: #04090F;
   height: 200px;
   width: 200px;
   margin: 21px;
   transform: rotate(45deg);
   position: relative;
   padding: 0;
-  box-shadow: 5px 5px 50px black;
+  box-shadow: 5px 5px 20px #2850ac;
 }
 #card {
   position: fixed;
@@ -33,13 +34,14 @@
 #card:hover {
   transform: rotate(675deg);
   color: white;
-  background-color: #3359a4;
-  box-shadow: 10px 10px 35px black;
-  border-radius: 20px;
+  background-color: transperent;
+  box-shadow: 0px 5px 25px #2850ac;
+  border-radius: 50%;
+  border: 1px solid transparent;
 }
 /* #technologies{
   margin-bottom: 100px;
 } */
-#technologiesCardContainer{
-  padding-bottom:110px !important;
+#technologiesCardContainer {
+  padding-bottom: 110px !important;
 }

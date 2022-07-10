@@ -9,15 +9,14 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
-section {
-  height: 100vh;
-}
 .heading{
   margin-bottom: 50px;
+  
 }
 .heading h3{
  margin: 0!important;
  font-family: 'Gentium Book Plus', serif;
+ font-family: 'Roboto Condensed', sans-serif;
 }
 .headingBorder {
   clip-path: polygon(
@@ -37,4 +36,33 @@ section {
   );
   width: 250px;
   height: 50px;
+}
+.headingBorder2 {
+  clip-path: polygon(
+    0% 45%,
+    33% 45%,
+    33% 30%,
+    50% 30%,
+    66% 30%,
+    66% 45%,
+    100% 45%,
+    100% 55%,
+    66% 55%,
+    66% 70%,
+    50% 50%,
+    33% 70%,
+    33% 55%,
+    0% 55%
+  );
+  width: 250px;
+  height: 50px;
+}
+.alertify-notifier .ajs-message.ajs-error{
+  color: #fff;
+  background: rgb(248, 62, 62) !important;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, .5);
+}
+.alertify-notifier .ajs-message.ajs-success{
+  color: #fff;
+
 }
