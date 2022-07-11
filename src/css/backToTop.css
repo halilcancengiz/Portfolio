@@ -4,7 +4,8 @@
     bottom: 4rem;
     right: 4rem;
     font-size: 2rem;
-    color: linear-gradient(to top right,royalblue,black);
+    /* color: linear-gradient(to top right,royalblue,black); */
+    color: rgba(53, 212, 220, 0.9);
     transition: all 0.5s ease;
     background-color: transparent;
     padding: 5px;

@@ -3,8 +3,6 @@
 }
 #technologies {
   background-color: rgb(231, 220, 220);
-
-
 }
 #card img {
   width: 75px;
@@ -19,7 +17,6 @@
   position: relative;
   padding: 0;
   box-shadow: 5px 5px 20px #2850ac;
-
 }
 #card {
   position: fixed;
@@ -65,7 +62,6 @@
   background-color: #04090F;
 }
 #searchTechnologyInput::placeholder{
-  text-align: center;
   color: white;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, .5);
 }

@@ -14,7 +14,7 @@ export default function Navigation() {
 
   return (
     <>
-      <a id="" onClick={openNav} href="#google" className="openBtn" data-toggle="tooltip" data-placement="top" title="Menu">
+      <a id="" onClick={openNav} href="#" className="openBtn" data-toggle="tooltip" data-placement="top" title="Menu">
         <i className="fa fa-bars"></i>
       </a>
       {/* overlay Start */}

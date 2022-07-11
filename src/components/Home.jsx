@@ -17,7 +17,8 @@ const Home = () => {
     <div className="carousel-item active h-100" data-bs-interval="10000">
     <img src={secondCarousel} className="d-block w-100 h-100" alt="..."/>
       <div className="carousel-caption d-flex align-items-center justify-content-center flex-column text-white h-100">
-        <h5 className="">First slide label</h5>
+        <h1 className="">Hello</h1>
+        <span>I'm Frontend Developer</span>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>

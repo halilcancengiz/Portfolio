@@ -11,6 +11,7 @@ html {
 }
 .heading{
   margin-bottom: 50px;
+  animation:2s zoomIn;
   
 }
 .heading h3{

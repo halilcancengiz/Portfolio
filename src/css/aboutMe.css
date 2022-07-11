@@ -1,13 +1,38 @@
-#aboutMeFirst img{
-    clip-path: circle(52% at 0% 0%);
-    box-shadow: 10px 10px 35px black;
+#aboutMe {
+  background-color: rgb(231, 220, 220);
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
 }
-#aboutMeFirst h3 {
-    text-transform:uppercase;
-    border-bottom:2px solid gray ;
-    padding: 10px;
-    
+#questionImgContainer1 {
+  height: 500px;
+  overflow: hidden;
+  border-radius: 300px;
+  box-shadow: 10px 10px 35px black;
 }
-#aboutMeSecond img{
-    clip-path: polygon(0% 100%,20% 50%,0% 20%,100% 0%,100% 80%);
+#questionImgContainer1 {
+  background: url("../images/about1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#questionImgContainer2 {
+  height: 500px;
+  overflow: hidden;
+  border-radius: 300px;
+  box-shadow: 10px 10px 35px black;
+}
+#questionImgContainer2 {
+  background: url("../images/about2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  #questionImgContainer1 {
+    display: none !important;
+  }
+
+  #questionImgContainer2 {
+    display: none !important;
+  }
 }

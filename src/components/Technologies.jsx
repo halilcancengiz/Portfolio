@@ -27,7 +27,7 @@ const Technologies = () => {
   return (
     <>
       <div id="technologies">
-        <div className="heading text-dark d-flex align-items-center justify-content-center pt-5  flex-column">
+        <div className="wow heading text-dark d-flex align-items-center justify-content-center pt-5  flex-column">
           <h3>TECHNOLOGIES</h3>
           <div className="headingBorder bg-dark"></div>
         </div>
@@ -41,9 +41,9 @@ const Technologies = () => {
                   onChange={(e) => setSearchTechnologyValue(e.target.value)}
                   type="text"
                   value={searchTechnologyValue}
-                  className="text-white"
+                  className="text-white ms-2"
                   id="searchTechnologyInput"
-                  placeholder="Search Technology"
+                  placeholder="Filter technologies"
                 />
               </div>
             </div>
@@ -52,7 +52,7 @@ const Technologies = () => {
               return (
                 <div
                   key={technology.id}
-                  className="technologiesCard col-lg-2 col-md-4 col-sm-6"
+                  className="wow technologiesCard col-lg-2 col-md-4 col-sm-6"
                 >
                   <div id="card">
                     <img src={technology.url} alt={technology.name} />

@@ -3,6 +3,10 @@ import "../css/myProject.css";
 import instagramImage from "../images/instagram.jpg";
 import reactImage from "../images/reactImage2.jpg";
 import weatherImage from "../images/weather.jpg";
+import 'animate.css';
+import WOW from 'wowjs';
+
+
 const MyProject = () => {
   const [getData, setGetData] = useState("");
 
@@ -14,13 +18,17 @@ const MyProject = () => {
         }
       })
       .then((data) => setGetData(data))
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err)); 
+      new WOW.WOW({
+        live: false
+      }).init();
   }, []);
+
 
   return (
     <>
       <div id="myProject">
-        <div className="heading text-white d-flex align-items-center justify-content-center flex-column pt-5">
+        <div className="wow heading text-white d-flex align-items-center justify-content-center flex-column pt-5">
           <h3>MY PROJECTS</h3>
           <div className="headingBorder bg-white"></div>
         </div>
@@ -28,11 +36,11 @@ const MyProject = () => {
           {/* TopSide Start */}
           <div id="topSide" className="w-100">
             <div className="row w-100 g-0 d-flex align-items-center justify-content-center flex-row">
-              <div className="projectContainer col-lg-3 col-md-5 mx-auto">
+              <div className="wow projectContainer col-lg-3 col-md-5 mx-auto">
                 <img className="imageOverlay" src={reactImage} alt="react" />
                 <div className="projectOverlay-1">
                   <div className="projectLink">
-                    <h3>React Photo Search App </h3>
+                    <h3>ReactJS Photo Search App </h3>
                     <div className="headingBorder2 bg-dark"></div>
                     <a
                       href="https://github.com/hllcncngz/Fotograflar-Projesi"
@@ -46,7 +54,7 @@ const MyProject = () => {
                   </div>
                 </div>
               </div>
-              <div className="projectContainer col-lg-3 col-md-5 mx-auto">
+              <div className="wow projectContainer col-lg-3 col-md-5 mx-auto">
                 <img
                   className="imageOverlay"
                   src={weatherImage}
@@ -68,7 +76,7 @@ const MyProject = () => {
                   </div>
                 </div>
               </div>
-              <div className="projectContainer col-lg-3 col-md-5 mx-auto">
+              <div className="wow projectContainer col-lg-3 col-md-5 mx-auto">
                 <img
                   className="imageOverlay"
                   src={instagramImage}
@@ -96,7 +104,7 @@ const MyProject = () => {
           {/* BottomSide Start */}
           <div id="bottomSide">
             <div className="row w-100">
-              <div className="githubCount d-flex align-items-center justify-content-center flex-column col-md-4">
+              <div className="wow githubCount d-flex align-items-center justify-content-center flex-column col-md-4" >
                 <div className="githubCountIcon">
                   <i className="fa-solid fa-person-walking-arrow-loop-left text-white"></i>
                 </div>
@@ -105,7 +113,7 @@ const MyProject = () => {
                   Github<span>Followers</span>
                 </div>
               </div>
-              <div className="githubCount d-flex align-items-center justify-content-center flex-column col-md-4">
+              <div className="wow githubCount d-flex align-items-center justify-content-center flex-column col-md-4 ">
                 <div className="githubCountIcon">
                   <i className="fa-solid fa-person-walking-arrow-right text-white"></i>
                 </div>
@@ -114,7 +122,7 @@ const MyProject = () => {
                   Github<span>Following</span>
                 </div>
               </div>
-              <div className="githubCount d-flex align-items-center justify-content-center flex-column col-md-4">
+              <div className="wow githubCount d-flex align-items-center justify-content-center flex-column col-md-4 " >
                 <div className="githubCountIcon">
                   <i className="fa-solid fa-folder-open text-white"></i>
                 </div>
