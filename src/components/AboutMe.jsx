@@ -43,7 +43,7 @@ const AboutMe = () => {
           </div>
           <div className="row container mx-auto">
             <artickel className="col-lg-6 col-md-8 d-flex align-items-center justify-content-center mx-auto">
-              <p style={{fontFamily:'"Roboto Condensed"'}} className="text-center pcss">
+              <p className="text-center pcss">
                 Yapamadıklarım olduğu zaman, tek başıma ilerlediğim için
                 motivasyon kaybı yaşamaya başladım. Gerçekten bir şeyi tek
                 başına öğrenmek kadar sancılı bir süreç yok. Ee bu böyle mi
@@ -62,8 +62,7 @@ const AboutMe = () => {
                 etme noktasına gelebilirsiniz. Yardım istemekten çekinmeyin.
                 İletişime geçmekten çekinmeyin. Ve pes etmeyin! Bana soru sormak
                 isteyen arkadaşlar hiç çekinmeden soru sorabilir. Elimden
-                geldiğince yardım ederim. Bana ulaşmak için{" "}
-                <a style={{fontSize:"18px"}} href="#contact">tıkla...</a>
+                geldiğince yardım ederim.
               </p>
             </artickel>
             <div id="questionImgContainer2" className="col-lg-5 d-flex align-items-center justify-content-center mx-auto" >

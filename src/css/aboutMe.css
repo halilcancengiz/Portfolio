@@ -1,9 +1,8 @@
 #aboutMe {
   /* background-color: rgb(231, 220, 220); */
-  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.3)),url('../images/jake-weirick-Q_RBVFFXR_g-unsplash.jpg') center;
+  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.3)),url('../images/aboutmebackground.jpg') right;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   margin: 0;
   font-size: 19px;
   font-weight: 400;
@@ -11,27 +10,26 @@
 #questionImgContainer1 {
   height: 500px;
   overflow: hidden;
-  border-radius: 300px;
-  box-shadow: 10px 10px 55px rgb(27, 11, 100);
 }
 #questionImgContainer1 {
-  background: url("../images/about1.jpg");
+  background: url("../images/aboutmeplanet.png");
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 50%;
 }
 #questionImgContainer2 {
   height: 500px;
   overflow: hidden;
   border-radius: 300px;
-  box-shadow: 10px 10px 35px black;
+
+
 }
 #questionImgContainer2 {
-  background: url("../images/mahdi-dastmard-5B8Pw-t9_Wo-unsplash.jpg") center;
   background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 10px 10px 55px rgb(24, 11, 100);
+  background-size:cover;
+  border-radius: 50%;
+  
 }
-
 @media screen and (max-width: 1200px) {
   #questionImgContainer1 {
     display: none !important;
@@ -47,10 +45,11 @@ questionImgContainer1 {
   animation-duration: 2s;
 }
 .pcss{
-  background: linear-gradient(to right,hsl(0,0%,30%) 0, rgb(255, 255, 255) 10%,hsl(0,0%,30%) 20%);
+  /* background: linear-gradient(to right,hsl(0,0%,30%) 0, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 20%,rgb(78, 72, 72) 30%); */
+  background: linear-gradient(to right,rgb(77, 77, 77) 0, white 10%, white 20% ,rgba(255, 255, 255, 0.575) 30%,rgb(90, 83, 83) 34%);
   -webkit-background-clip: text;
   -webkit-text-fill-color:transparent;
-  animation: shine 5s infinite linear;
+  animation: shine 4s infinite linear;
 }
 @keyframes shine {
   0%{

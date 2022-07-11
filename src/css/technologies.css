@@ -20,7 +20,6 @@
 }
 #card {
   position: fixed;
-  background-color: white;
   height: 100%;
   width: 100%;
   transform: rotate(315deg);

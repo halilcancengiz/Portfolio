@@ -51,8 +51,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            {/* Footer Icons Start */}
-            
+            {/* Footer Icons Start */}      
           </div>
         </div>
       </div>
