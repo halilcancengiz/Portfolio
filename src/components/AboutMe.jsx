@@ -6,19 +6,16 @@ const AboutMe = () => {
     <>
       <div className="py-5" id="aboutMe">
         <div className="wow heading d-flex align-items-center justify-content-center  flex-column">
-          <h3>ABOUT ME</h3>
-          <div className="headingBorder bg-dark"></div>
+          <h3 className="text-white">ABOUT ME</h3>
+          <div className="headingBorder bg-white"></div>
         </div>
         <div className="aboutMeContainer">
           <div className="row container mx-auto">
-            <div
-              id="questionImgContainer1"
-              className="col-lg-5 d-flex align-items-center justify-content-center mx-auto"
-            >
+            <div id="questionImgContainer1" className="col-lg-5 d-flex align-items-center justify-content-center mx-auto">
             </div>
-            <div className="col-lg-6 col-md-8 d-flex align-items-center justify-content-center flex-column mx-auto">
-              <h2 style={{borderBottom:"1px solid black",padding:"10px"}}>My Software Adventure</h2>
-              <p className="text-center">
+            <artickel className="col-lg-6 col-md-8 d-flex align-items-center justify-content-center flex-column mx-auto">
+              <h2 className="text-white" style={{borderBottom:"1px solid black",padding:"10px"}}>My Software Adventure</h2>
+              <p  className="text-center pcss">
                 Merhaba ismim Halil.2021'de Karabük Üniversitesi Mekatronik
                 Mühendisliği bölümünden mezun oldum. Aslında bölümümü
                 seviyordum. Fakat daha çok istediğim bir şey olduğuna karar
@@ -40,13 +37,13 @@ const AboutMe = () => {
                 zaman harcayarak yapmaya başlamıştım. Bu da bana daha farklı
                 tecrübeler edinmem için zaman kazandırdı. Çeşitli sitelerin
                 klonlarını yapmaya başladım. Gördüğüm çoğu şeyi koda
-                dökebiliyordum
+                dökebiliyordum.
               </p>
-            </div>
+            </artickel>
           </div>
           <div className="row container mx-auto">
-            <div className="col-lg-6 col-md-8 d-flex align-items-center justify-content-center mx-auto">
-              <p style={{fontFamily:'"Roboto Condensed"'}} className="text-center">
+            <artickel className="col-lg-6 col-md-8 d-flex align-items-center justify-content-center mx-auto">
+              <p style={{fontFamily:'"Roboto Condensed"'}} className="text-center pcss">
                 Yapamadıklarım olduğu zaman, tek başıma ilerlediğim için
                 motivasyon kaybı yaşamaya başladım. Gerçekten bir şeyi tek
                 başına öğrenmek kadar sancılı bir süreç yok. Ee bu böyle mi
@@ -68,12 +65,8 @@ const AboutMe = () => {
                 geldiğince yardım ederim. Bana ulaşmak için{" "}
                 <a style={{fontSize:"18px"}} href="#contact">tıkla...</a>
               </p>
-            </div>
-            <div
-              id="questionImgContainer2"
-              className="col-lg-5 d-flex align-items-center justify-content-center mx-auto"
-            >
-            
+            </artickel>
+            <div id="questionImgContainer2" className="col-lg-5 d-flex align-items-center justify-content-center mx-auto" >
             </div>
           </div>
         </div>

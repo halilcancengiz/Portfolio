@@ -23,6 +23,7 @@
   overflow-x: hidden;
   transition: all 0.5s ease;
   background: url(../images/boris-stefanik-wxJscL5ZzDA-unsplash.jpg) center;
+
 }
 .closeBtn {
   position: absolute;
