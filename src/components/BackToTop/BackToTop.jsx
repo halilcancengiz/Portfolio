@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../css/backToTop.css";
+import "./backToTop.css";
 const BackToTop = () => {
   let backToTopVisibility = () => {
     window.onscroll = function () {

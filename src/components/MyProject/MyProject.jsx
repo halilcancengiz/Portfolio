@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "../css/myProject.css";
-import instagramImage from "../images/instagram.jpg";
-import reactImage from "../images/reactImage2.jpg";
-import weatherImage from "../images/weather.jpg";
+import "./myProject.css";
+import instagramImage from "../../images/instagram.jpg";
+import reactImage from "../../images/reactImage2.jpg";
+import weatherImage from "../../images/weather.jpg";
 import 'animate.css';
 import WOW from 'wowjs';
 

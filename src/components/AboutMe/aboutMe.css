@@ -1,6 +1,6 @@
 #aboutMe {
   /* background-color: rgb(231, 220, 220); */
-  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.3)),url('../images/aboutmebackground.jpg') right;
+  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.3)),url('../../images/aboutmebackground.jpg') right;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 #questionImgContainer1 {
-  background: url("../images/aboutmeplanet.png");
+  background: url("../../images/aboutmeplanet.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;

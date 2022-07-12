@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/contact.css";
+import "./contact.css";
 import * as alertify from "alertifyjs";
 const Contact = () => {
   

@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
-import Navigation from './components/Navigation';
-import Home from './components/Home';
-import BackToTop from './components/BackToTop';
-import AboutMe from './components/AboutMe';
-import Technologies from './components/Technologies';
-import MyProject from './components/MyProject';
-import Footer from './components/Footer';
-import Contact from './components/Contact';
+
+import Home from './components/Home/Home';
+import AboutMe from './components/AboutMe/AboutMe';
+import BackToTop from './components/BackToTop/BackToTop';
+import MyProject from './components/MyProject/MyProject';
+import Technologies from './components/Technologies/Technologies';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import Navigation from './components/Navigation/Navigation';
 
 
 

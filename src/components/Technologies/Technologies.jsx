@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import "../css/technologies.css";
-import jsIcon from "../images/technologies/1.png";
-import reactIcon from "../images/technologies/2.png";
-import htmlIcon from "../images/technologies/3.png";
-import cssIcon from "../images/technologies/4.png";
-import nodejsIcon from "../images/technologies/5.png";
-import bootstrapIcon from "../images/technologies/6.png";
-import rdesignIcon from "../images/technologies/7.jpg";
-import gitIcon from "../images/technologies/8.png";
+import "./technologies.css";
+import jsIcon from "../../images/technologies/1.png";
+import reactIcon from "../../images/technologies/2.png";
+import htmlIcon from "../../images/technologies/3.png";
+import cssIcon from "../../images/technologies/4.png";
+import nodejsIcon from "../../images/technologies/5.png";
+import bootstrapIcon from "../../images/technologies/6.png";
+import rdesignIcon from "../../images/technologies/7.jpg";
+import gitIcon from "../../images/technologies/8.png";
 
 const Technologies = () => {
   const [searchTechnologyValue, setSearchTechnologyValue] = useState("");
@@ -36,7 +36,7 @@ const Technologies = () => {
           <div className="row container mx-auto d-flex align-items-center justify-content-center">
             <div className="col-lg-12 d-flex align-items-center justify-content-center flex-row mb-5">
               <div id="searchContainer" className="rounded-pill">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i className="fa-solid fa-magnifying-glass"></i>
                 <input
                   onChange={(e) => setSearchTechnologyValue(e.target.value)}
                   type="text"

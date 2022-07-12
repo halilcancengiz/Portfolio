@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/aboutMe.css";
+import "./aboutMe.css";
 
 const AboutMe = () => {
   return (
@@ -13,7 +13,7 @@ const AboutMe = () => {
           <div className="row container mx-auto">
             <div id="questionImgContainer1" className="col-lg-5 d-flex align-items-center justify-content-center mx-auto">
             </div>
-            <artickel className="col-lg-6 col-md-8 d-flex align-items-center justify-content-center flex-column mx-auto">
+            <article className="col-lg-6 col-md-8 d-flex align-items-center justify-content-center flex-column mx-auto">
               <h2 className="text-white" style={{borderBottom:"1px solid black",padding:"10px"}}>My Software Adventure</h2>
               <p  className="text-center pcss">
                 Merhaba ismim Halil.2021'de Karabük Üniversitesi Mekatronik
@@ -39,10 +39,10 @@ const AboutMe = () => {
                 klonlarını yapmaya başladım. Gördüğüm çoğu şeyi koda
                 dökebiliyordum.
               </p>
-            </artickel>
+            </article>
           </div>
           <div className="row container mx-auto">
-            <artickel className="col-lg-6 col-md-8 d-flex align-items-center justify-content-center mx-auto">
+            <article className="col-lg-6 col-md-8 d-flex align-items-center justify-content-center mx-auto">
               <p className="text-center pcss">
                 Yapamadıklarım olduğu zaman, tek başıma ilerlediğim için
                 motivasyon kaybı yaşamaya başladım. Gerçekten bir şeyi tek
@@ -64,7 +64,7 @@ const AboutMe = () => {
                 isteyen arkadaşlar hiç çekinmeden soru sorabilir. Elimden
                 geldiğince yardım ederim.
               </p>
-            </artickel>
+            </article>
             <div id="questionImgContainer2" className="col-lg-5 d-flex align-items-center justify-content-center mx-auto" >
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/navigation.css";
+import "./navigation.css";
 export default function Navigation() {
   // clock Parameters
 
