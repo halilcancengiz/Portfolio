@@ -1,10 +1,10 @@
-#footerArea {
+#footerAreaDark {
   background-color: #060708;
 }
-#footerArea h6 {
+#footerAreaDark h6 {
   font-family: "Roboto Condensed", sans-serif;
 }
-#footerArea ul li a {
+#footerAreaDark ul li a {
   font-size: 2.5rem;
   margin-left: 20px;
   margin-right: 20px;
@@ -13,7 +13,7 @@
   width: 100%;
   height: 100%;
 }
-#footerArea ul li {
+#footerAreaDark ul li {
   box-shadow: white 0px 5px 15px;
   border: none;
   margin-left: 10px;
@@ -22,10 +22,10 @@
   display: inline-block;
   border-radius: 15px;
 }
-#footerArea ul {
+#footerAreaDark ul {
   padding: 0 !important;
 }
-#footerArea ul li:hover {
+#footerAreaDark ul li:hover {
   transform: rotateY(360deg);
 }
 #instagram:hover {

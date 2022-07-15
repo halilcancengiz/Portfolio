@@ -1,4 +1,5 @@
-import React from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState } from 'react';
 import './App.css';
 
 import Home from './components/Home/Home';
@@ -9,13 +10,17 @@ import Technologies from './components/Technologies/Technologies';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Navigation from './components/Navigation/Navigation';
+import { ThemeProvider } from './context/ThemeContext';
+
 
 
 
 
 function App() {
+
+  
   return (
-    <div>
+    <ThemeProvider>
       <header>
         <div id='navigationAndHomeContainer'>
           <Navigation />
@@ -33,7 +38,7 @@ function App() {
       </footer>
 
       <BackToTop />
-    </div>
+    </ThemeProvider>
   );
 }
 

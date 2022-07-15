@@ -1,21 +1,35 @@
 import React from "react";
 import "./aboutMe.css";
+import { useTheme } from "../../context/ThemeContext";
 
 const AboutMe = () => {
+  let { theme } = useTheme();
   return (
     <>
-      <div className="py-5" id="aboutMe">
+      <div
+        className="py-5"
+        id="aboutMeDark"
+      >
         <div className="wow heading d-flex align-items-center justify-content-center  flex-column">
           <h3 className="text-white">ABOUT ME</h3>
           <div className="headingBorder bg-white"></div>
         </div>
         <div className="aboutMeContainer">
           <div className="row container mx-auto">
-            <div id="questionImgContainer1" className="col-lg-5 d-flex align-items-center justify-content-center mx-auto">
-            </div>
+            <div
+              id="questionImgContainerDark"
+              className={
+                "col-lg-5 d-flex align-items-center justify-content-center mx-auto" 
+              }
+            ></div>
             <article className="col-lg-6 col-md-8 d-flex align-items-center justify-content-center flex-column mx-auto">
-              <h2 className="text-white" style={{borderBottom:"1px solid black",padding:"10px"}}>My Software Adventure</h2>
-              <p  className="text-center pcss">
+              <h2
+                className="text-white"
+                style={{ borderBottom: "1px solid black", padding: "10px" }}
+              >
+                My Software Adventure
+              </h2>
+              <p className="text-center pcss">
                 Merhaba ismim Halil.2021'de Karabük Üniversitesi Mekatronik
                 Mühendisliği bölümünden mezun oldum. Aslında bölümümü
                 seviyordum. Fakat daha çok istediğim bir şey olduğuna karar
@@ -65,8 +79,10 @@ const AboutMe = () => {
                 geldiğince yardım ederim.
               </p>
             </article>
-            <div id="questionImgContainer2" className="col-lg-5 d-flex align-items-center justify-content-center mx-auto" >
-            </div>
+            <div
+              id="questionImgContainer2"
+              className="col-lg-5 d-flex align-items-center justify-content-center mx-auto"
+            ></div>
           </div>
         </div>
       </div>

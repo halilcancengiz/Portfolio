@@ -8,8 +8,10 @@ import nodejsIcon from "../../images/technologies/5.png";
 import bootstrapIcon from "../../images/technologies/6.png";
 import rdesignIcon from "../../images/technologies/7.jpg";
 import gitIcon from "../../images/technologies/8.png";
+import {useTheme} from "../../context/ThemeContext"
 
 const Technologies = () => {
+  let {theme}=useTheme()
   const [searchTechnologyValue, setSearchTechnologyValue] = useState("");
   const [technologiesCard, setTechnologiesCard] = useState([
     { id: 1, name: "Javascript", url: jsIcon },
@@ -26,7 +28,7 @@ const Technologies = () => {
   );
   return (
     <>
-      <div id="technologies">
+      <div id={theme==="dark" ? "technologiesDark" :"technologiesLight"}>
         <div className="wow heading text-dark d-flex align-items-center justify-content-center pt-5  flex-column">
           <h3>TECHNOLOGIES</h3>
           <div className="headingBorder bg-dark"></div>
@@ -35,7 +37,7 @@ const Technologies = () => {
         <div id="technologiesCardContainer">
           <div className="row container mx-auto d-flex align-items-center justify-content-center">
             <div className="col-lg-12 d-flex align-items-center justify-content-center flex-row mb-5">
-              <div id="searchContainer" className="rounded-pill">
+              <div id={theme==="dark" ?"searchContainerDark":"searchContainerLight"} className="rounded-pill">
                 <i className="fa-solid fa-magnifying-glass"></i>
                 <input
                   onChange={(e) => setSearchTechnologyValue(e.target.value)}
@@ -52,7 +54,7 @@ const Technologies = () => {
               return (
                 <div
                   key={technology.id}
-                  className="wow technologiesCard col-lg-2 col-md-4 col-sm-6"
+                  className={"wow  col-lg-2 col-md-4 col-sm-6 " + (theme==="dark" ?"technologiesCardDark":"technologiesCardLight")}
                 >
                   <div id="card">
                     <img src={technology.url} alt={technology.name} />

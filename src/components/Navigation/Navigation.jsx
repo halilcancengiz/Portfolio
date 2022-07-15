@@ -1,5 +1,7 @@
 import React from "react";
 import "./navigation.css";
+import { useTheme } from "../../context/ThemeContext";
+
 export default function Navigation() {
   // clock Parameters
 
@@ -12,22 +14,42 @@ export default function Navigation() {
     document.getElementById("nav").style.height = "0%";
   };
 
+  let { toggleTheme, theme } = useTheme();
+
   return (
     <>
-      <a id="" onClick={openNav} href="#" className="openBtn" data-toggle="tooltip" data-placement="top" title="Menu">
+      <button
+        onClick={openNav}
+        href="#"
+        className={theme === "dark" ? "openBtnDark" : "openBtnLight"}
+        data-toggle="tooltip"
+        data-placement="top"
+        title="Menu"
+      >
         <i className="fa fa-bars"></i>
-      </a>
+      </button>
       {/* overlay Start */}
       <div
         id="nav"
-        className="overlay d-flex align-items-center justify-content-center flex-column"
+        className={
+          "d-flex align-items-center justify-content-center flex-column " +
+          (theme === "dark" ? "overlay-dark" : "overlay-light")
+        }
       >
-        <a onClick={closeNav} href="#" className="closeBtn">
+        <button onClick={closeNav} href="#" className="closeBtn">
           <i className="fa fa-times"></i>
-        </a>
+        </button>
+        {/* Change Theme START */}
+        <button
+          onClick={toggleTheme}
+          id={theme === "dark" ? "changeThemeDark" : "changeThemeLight"}
+        >
+          {theme === "dark" ? "Dark Theme" : "Light Theme"}
+        </button>
+        {/* Change Theme START */}
         {/* <Clock /> */}
         <div
-          id="navbar"
+          id={theme === "dark" ? "navbar-dark" : "navbar-light"}
           className="d-flex align-items-center justify-content-center text-center w-100 h-100"
         >
           <ul>
@@ -37,12 +59,12 @@ export default function Navigation() {
               </a>
             </li>
             <li>
-              <a onClick={closeNav} href="#aboutMe">
+              <a onClick={closeNav} href={theme==="dark"?"#aboutMeDark":"#aboutMeLight"}>
                 <i className="fa-solid fa-id-card-clip"></i>About Me
               </a>
             </li>
             <li>
-              <a onClick={closeNav} href="#myProject">
+              <a onClick={closeNav} href={theme==="dark"?"#myProjectDark":"#myProjectLight"}>
                 <i className="fa-solid fa-laptop-code"></i>My Project
               </a>
             </li>

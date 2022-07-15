@@ -13,7 +13,6 @@
     "@testing-library/user-event": "^13.5.0",
     "alertifyjs": "^1.13.1",
     "animate.css": "^4.1.1",
-    "axios": "^0.27.2",
     "eslint-plugin-react-hooks": "^4.7.0-next-8e35b5060-20220706",
     "framer-motion": "^6.4.3",
     "react": "^18.2.0",

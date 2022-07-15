@@ -1,29 +1,23 @@
-#aboutMe {
+#aboutMeDark{
   /* background-color: rgb(231, 220, 220); */
-  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.3)),url('../../images/aboutmebackground.jpg') right;
+  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.3)),url('../../images/aboutmeDark.jpg') right;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
   font-size: 19px;
   font-weight: 400;
 }
-#questionImgContainer1 {
+#questionImgContainerDark {
   height: 500px;
   overflow: hidden;
 }
-#questionImgContainer1 {
+#questionImgContainerDark {
   background: url("../../images/aboutmeplanet.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
 }
-#questionImgContainer2 {
-  height: 500px;
-  overflow: hidden;
-  border-radius: 300px;
 
-
-}
 #questionImgContainer2 {
   background-repeat: no-repeat;
   background-size:cover;
@@ -31,10 +25,9 @@
   
 }
 @media screen and (max-width: 1200px) {
-  #questionImgContainer1 {
+  #questionImgContainerDark {
     display: none !important;
   }
-
   #questionImgContainer2 {
     display: none !important;
   }

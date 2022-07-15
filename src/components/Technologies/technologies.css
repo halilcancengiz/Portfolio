@@ -1,14 +1,17 @@
 *{
   font-family: "Roboto Condensed", sans-serif;
 }
-#technologies {
+#technologiesDark {
   background-color: rgb(231, 220, 220);
+}
+#technologiesLight{
+  background-color: white;
 }
 #card img {
   width: 75px;
   height: 75px;
 }
-.technologiesCard {
+.technologiesCardDark {
   background-color: #04090F;
   height: 200px;
   width: 200px;
@@ -17,6 +20,16 @@
   position: relative;
   padding: 0;
   box-shadow: 5px 5px 20px #2850ac;
+}
+.technologiesCardLight {
+  background-color: #324068;
+  height: 200px;
+  width: 200px;
+  margin: 21px;
+  transform: rotate(45deg);
+  position: relative;
+  padding: 0;
+  box-shadow: 5px 5px 20px black;
 }
 #card {
   position: fixed;
@@ -53,7 +66,14 @@
   outline: none;
   background-color: transparent;
 }
-#searchContainer i{
+#searchContainerDark i{
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+  background-color: #04090F;
+}
+#searchContainerLight i{
   padding: 10px;
   border-radius: 50%;
   border: 1px solid white;
@@ -64,8 +84,13 @@
   color: white;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, .5);
 }
-#searchContainer{
+#searchContainerDark{
   background-color: #132b61;
+  padding: 5px;
+  box-shadow: 0px 5px 25px #2850ac;
+}
+#searchContainerLight{
+  background-color: #324068;
   padding: 5px;
   box-shadow: 0px 5px 25px #2850ac;
 }

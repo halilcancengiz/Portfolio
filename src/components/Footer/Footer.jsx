@@ -16,7 +16,7 @@ const Footer = () => {
           title="map"
         ></iframe>
         {/* Google Map End */}
-        <div id="footerArea" className="w-100">
+        <div id="footerAreaDark" className="w-100">
           <div className="container h-100 g-0 my-5">
             {/* Footer Icons Start */}
             <div id="footerDesc" className="text-white d-flex align-items-center justify-content-center flex-column my-5">

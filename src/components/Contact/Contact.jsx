@@ -28,7 +28,7 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="bg-dark py-5" id="contact">
+      <div className="py-5" id="contact">
         <div className="wow heading d-flex align-items-center justify-content-center  flex-column">
           <h3 className="text-white">CONTACT ME</h3>
           <div className="headingBorder bg-white"></div>
