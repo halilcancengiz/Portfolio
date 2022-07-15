@@ -47,7 +47,10 @@
   animation-name: fadeInTopLeft;
   animation-duration: 2s;
 }
-.githubCount:hover {
+.githubCountDark:hover {
+  transform: scale(1.2);
+}
+.githubCountLight:hover {
   transform: scale(1.2);
 }
 
