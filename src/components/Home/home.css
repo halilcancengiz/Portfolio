@@ -23,7 +23,7 @@
   text-shadow: 5px 5px 20px black;
 }
 #carouselFirstPage h1 {
-  font-size: 50px;
+  font-size: 4rem;
 }
 #carouselFirstPage span {
   color: black;
@@ -43,14 +43,29 @@
     color: transparent;
   }
 }
+@media screen and (max-width: 300px) {
+  #carouselFirstPage h1 {
+    font-size: 1.5rem!important;
+  }
+}
+@media screen and (max-width: 400px) {
+  #carouselFirstPage h1 {
+    font-size: 2rem!important;
+  }
+}
+@media screen and (max-width: 508px) {
+  #carouselFirstPage h1 {
+    font-size: 2.5rem!important;
+  }
+}
 @media screen and (max-width: 792px) {
   #carouselFirstPage h1 {
-    font-size: 30px;
+    font-size: 2rem!important;
   }
 }
 @media screen and (max-width: 992px) {
   #carouselFirstPage h1 {
-    font-size: 40px;
+    font-size: 3rem!important;
   }
 }
 /* Carousel First Page END */
@@ -177,58 +192,3 @@
   border: none;
   background-color: #166cb5;
 }
-/* Validation Button Light END */
-
-.registerModalDark{
-  position: absolute;
-  width: 0%;
-  height: 0%;
-  overflow: hidden;
-  background-color: white;
-  transition: all .5s ease-in-out;
-}
-.registerModalLight{
-  position: absolute;
-  width: 0%;
-  height: 0%;
-  overflow: hidden;
-  background-color: white;
-  transition: all .5s ease-in-out;
-}
-.closeRegisterModal{
-  position: absolute;
-  right: 40px;
-  top: 40px;
-  border: none;
-  background-color: transparent;
-  padding: 5px;
-  font-size: 2rem;
-}
-
-/* Login Modal START */
-.loginModalDark{
-  position: absolute;
-  width: 0%;
-  height: 0%;
-  overflow: hidden;
-  background-color: white;
-  transition: all .5s ease-in-out;
-}
-.loginModalLight{
-  position: absolute;
-  width: 0%;
-  height: 0%;
-  overflow: hidden;
-  background-color: white;
-  transition: all .5s ease-in-out;
-}
-.closeLoginModal{
-  position: absolute;
-  right: 40px;
-  top: 40px;
-  border: none;
-  background-color: transparent;
-  padding: 5px;
-  font-size: 2rem;
-}
-/* Login Modal END */

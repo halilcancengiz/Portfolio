@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
             <ul
               id="social"
-              className="d-flex align-items-center justify-content-center h-50"
+              className="d-flex align-items-center justify-content-center h-50 col-xs-3"
             >
               <li id="instagram">
                 <a href="https://www.instagram.com/hllcncngz" target="Blank" data-toggle="tooltip" data-placement="top" title="Instagram">

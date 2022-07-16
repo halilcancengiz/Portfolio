@@ -36,7 +36,7 @@ const MyProject = () => {
           {/* TopSide Start */}
           <div id="topSide" className="w-100">
             <div className="row w-100 g-0 d-flex align-items-center justify-content-center flex-row">
-              <div className="wow projectContainer col-lg-3 col-md-5 mx-auto">
+              <div className="wow projectContainer col-lg-3 col-md-5 col-sm-6 mx-auto">
                 <img className="imageOverlay" src={reactImage} alt="react" />
                 <div className={theme==="dark" ? "projectOverlay-1Dark":"projectOverlay-1Light"}>
                   <div className="projectLink">
@@ -54,7 +54,7 @@ const MyProject = () => {
                   </div>
                 </div>
               </div>
-              <div className="wow projectContainer col-lg-3 col-md-5 mx-auto">
+              <div className="wow projectContainer col-lg-3 col-md-5 col-sm-6 mx-auto">
                 <img
                   className="imageOverlay"
                   src={instagramImage}
@@ -76,7 +76,7 @@ const MyProject = () => {
                   </div>
                 </div>
               </div>
-              <div className="wow projectContainer col-lg-3 col-md-5 mx-auto">
+              <div className="wow projectContainer col-lg-3 col-md-5 col-sm-6 mx-auto">
                 <img
                   className="imageOverlay"
                   src={weatherImage}
