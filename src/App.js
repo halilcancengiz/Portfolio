@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
+import { ThemeProvider } from './context/ThemeContext';
 
 import Home from './components/Home/Home';
 import AboutMe from './components/AboutMe/AboutMe';
@@ -10,7 +11,7 @@ import Technologies from './components/Technologies/Technologies';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Navigation from './components/Navigation/Navigation';
-import { ThemeProvider } from './context/ThemeContext';
+
 
 
 

@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="container h-100 g-0 my-5">
             {/* Footer Icons Start */}
             <div id="footerDesc" className="text-white d-flex align-items-center justify-content-center flex-column my-5">
-              <h6 id="copyright">© 2022 Copyright : halilsoftware.com</h6>
+              <h6 id="copyright">© 2022 Copyright : www.halilcancengiz.com</h6>
             </div>
             <ul
               id="social"

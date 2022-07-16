@@ -15,6 +15,7 @@
 }
 #home {
   height: 100vh;
+  position: relative;
 }
 /* Carousel First Page Start */
 #carouselFirstPage {
@@ -32,15 +33,15 @@
   transition: all 0.5s ease-in-out;
 }
 @keyframes changeColor {
- 0%{
+  0% {
     color: transparent;
- }
- 50%{
+  }
+  50% {
     color: white;
- }
- 100%{
+  }
+  100% {
     color: transparent;
- }
+  }
 }
 @media screen and (max-width: 792px) {
   #carouselFirstPage h1 {
@@ -76,6 +77,158 @@
 }
 /* Carousel Second Page END */
 
-#home .active{
+#home .active {
   background-color: royalblue !important;
 }
+
+#home #registerDarkPage button {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  background-color: red;
+}
+#home #registerLightPage button {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+#home #loginDarkPage button {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+#home #loginLightPage button {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+
+.validationButtonDark {
+  position: absolute;
+  top: 40px;
+  left: 9rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+.validationButtonDark:focus {
+  outline: none !important;
+  border: none !important;
+}
+.validationButtonLight {
+  position: absolute;
+  top: 40px;
+  left: 9rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.1rem;
+}
+.validationButtonLight:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+/* Validation Button Dark START */
+.validationButtonDark button {
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+  border-bottom: 1px solid white;
+  transition: all 0.5s ease-in-out;
+  color: white;
+  font-size: 1.1rem;
+}
+.validationButtonDark button:hover {
+  transform: scale(1.2);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 35px 10px #016066;
+  border: none;
+  background-color: #016066;
+}
+/* Validation Button Dark END */
+
+/* Validation Button Light START */
+
+.validationButtonLight button {
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+  border-bottom: 1px solid white;
+  transition: all 0.5s ease-in-out;
+  color: white;
+}
+.validationButtonLight button:hover {
+  transform: scale(1.2);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 35px black;
+  border: none;
+  background-color: #166cb5;
+}
+/* Validation Button Light END */
+
+.registerModalDark{
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  overflow: hidden;
+  background-color: white;
+  transition: all .5s ease-in-out;
+}
+.registerModalLight{
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  overflow: hidden;
+  background-color: white;
+  transition: all .5s ease-in-out;
+}
+.closeRegisterModal{
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  font-size: 2rem;
+}
+
+/* Login Modal START */
+.loginModalDark{
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  overflow: hidden;
+  background-color: white;
+  transition: all .5s ease-in-out;
+}
+.loginModalLight{
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  overflow: hidden;
+  background-color: white;
+  transition: all .5s ease-in-out;
+}
+.closeLoginModal{
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  font-size: 2rem;
+}
+/* Login Modal END */

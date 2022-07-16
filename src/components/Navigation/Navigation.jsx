@@ -59,12 +59,18 @@ export default function Navigation() {
               </a>
             </li>
             <li>
-              <a onClick={closeNav} href={theme==="dark"?"#aboutMeDark":"#aboutMeLight"}>
+              <a
+                onClick={closeNav}
+                href={theme === "dark" ? "#aboutMeDark" : "#aboutMeLight"}
+              >
                 <i className="fa-solid fa-id-card-clip"></i>About Me
               </a>
             </li>
             <li>
-              <a onClick={closeNav} href={theme==="dark"?"#myProjectDark":"#myProjectLight"}>
+              <a
+                onClick={closeNav}
+                href={theme === "dark" ? "#myProjectDark" : "#myProjectLight"}
+              >
                 <i className="fa-solid fa-laptop-code"></i>My Project
               </a>
             </li>

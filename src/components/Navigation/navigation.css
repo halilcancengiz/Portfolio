@@ -41,7 +41,9 @@
   z-index: 3;
   overflow-x: hidden;
   transition: all 0.5s ease;
-  background: url(../../images/menuDark.jpg) center;
+  background:url('../../images/menuDark.jpg') center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* LIGHT THEME */
 .overlay-light {
@@ -55,7 +57,10 @@
   z-index: 3;
   overflow-x: hidden;
   transition: all 0.5s ease;
-  background: url(../../images/menuLight.jpg) center;
+  background:url('../../images/menuLight.jpg') center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 .closeBtn {
   position: absolute;
@@ -181,3 +186,15 @@
   border: none;
   background-color: black;
 }
+
+
+
+/* Login Button End */
+
+
+/* Register Page Modal START */
+
+/* Register Page Modal END */
+/* Login Page Modal START */
+/* Login Page Modal END */
+
