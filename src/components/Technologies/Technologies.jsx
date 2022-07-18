@@ -54,7 +54,7 @@ const Technologies = () => {
               return (
                 <div
                   key={technology.id}
-                  className={"" + (theme==="dark" ?"technologiesCardDark":"technologiesCardLight")}
+                  className={theme==="dark" ?"technologiesCardDark":"technologiesCardLight"}
                 >
                   <div id="card">
                     <img src={technology.url} alt={technology.name} />

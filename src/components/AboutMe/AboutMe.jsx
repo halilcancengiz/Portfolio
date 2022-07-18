@@ -6,10 +6,7 @@ const AboutMe = () => {
   let { theme } = useTheme();
   return (
     <>
-      <div
-        className="py-5"
-        id="aboutMeDark"
-      >
+      <div className="py-5" id="aboutMeDark">
         <div className="wow heading d-flex align-items-center justify-content-center  flex-column">
           <h3 className="text-white">ABOUT ME</h3>
           <div className="headingBorder bg-white"></div>
@@ -19,7 +16,7 @@ const AboutMe = () => {
             <div
               id="questionImgContainerDark"
               className={
-                "col-lg-5 d-flex align-items-center justify-content-center mx-auto" 
+                "col-lg-5 d-flex align-items-center justify-content-center mx-auto"
               }
             ></div>
             <article className="col-lg-6 col-md-8 d-flex align-items-center justify-content-center flex-column mx-auto">
@@ -30,53 +27,46 @@ const AboutMe = () => {
                 My Software Adventure
               </h2>
               <p className="text-center pcss">
-                Merhaba ismim Halil.2021'de Karabük Üniversitesi Mekatronik
-                Mühendisliği bölümünden mezun oldum. Aslında bölümümü
-                seviyordum. Fakat daha çok istediğim bir şey olduğuna karar
-                verdim.O da yazılım geliştirici olmak. Mezun olmadan önce kendi
-                çapımda yazılımla ilgileniyordum. Mezun olduktan sonra, boş
-                zamanımın artmasıyla kendimi tamamen bu alana verdim. İlk
-                başlarda, yani boş zamanımın tamamını bu alana vermeye
-                başladığımda, kendime bir alan seçmem gerektiğini farkettim.
-                Yazılım geniş bir alan sonuçta. Ne yapmak beni mutlu ediyordu.
-                Öncelikle kendime bu soruyu sordum. Bir ürün ortaya koymak ve bu
-                ürünü görsellerle güzelleştirmenin bana heyecan vereceğini
-                düşündüm. Daha sonra bunun için hangi dilleri öğrenmem
-                gerektiğini araştırdım. Karşıma javascript,html,css çıktı.
-                Ufaktan youtube üzeriden eğitim videolarını izlemeye başladım.
-                Yaptıklarım küçük de olsa çok hoşuma gidiyordu. Alıştırmalar
-                yapmaya başladım. Alıştırma yaptıkça daha da geliştim. Ama hala
-                kendimi bu işi profesyonel olarak yapmaya hazır hissetmiyordum.
-                Daha sonra bootstrap ile karşılaştım. Artık çoğu kodu, daha az
-                zaman harcayarak yapmaya başlamıştım. Bu da bana daha farklı
-                tecrübeler edinmem için zaman kazandırdı. Çeşitli sitelerin
-                klonlarını yapmaya başladım. Gördüğüm çoğu şeyi koda
-                dökebiliyordum.
+                I thought that creating a product and varying it may be
+                something that i can enjoy. Thus I knew the next step would be
+                to make a research about programming languages needed for those
+                skills. As a result I got acquainted with Javascript, HTML and
+                CSS. I started to watch videos and I enjoyed what I made, even
+                if it seemed small. I was practising and improving myself but
+                still I was not feeling that my potential was faced with a
+                proper leading. Then I found out about the bootstrap. I started
+                to write more codes in less time. This program gave me
+                opportunity to earn different experiences and, as a result, I
+                was able to make clones of various sites - I could code most of
+                the websites which I saw. Unfortunatelly I started loosing my
+                motivation whenever i saw that I was lacking some skills needed
+                for tasks that i wanted to accomplish. When I couldn't do
+                whatever I wanted i was feeling helpless.
               </p>
             </article>
           </div>
           <div className="row container mx-auto">
             <article className="col-lg-6 col-md-8 d-flex align-items-center justify-content-center mx-auto">
               <p className="text-center pcss">
-                Yapamadıklarım olduğu zaman, tek başıma ilerlediğim için
-                motivasyon kaybı yaşamaya başladım. Gerçekten bir şeyi tek
-                başına öğrenmek kadar sancılı bir süreç yok. Ee bu böyle mi
-                gidecekti ? Tabii ki hayır. Bu tek kişilik öğrenme sürecini
-                nasıl atlatabilirim diye araştırma yapmaya başladım. Bootcampler
-                ile karşılaştım. Gördüğüm tüm bootcamplere başvurmaya başladım.
-                Sonunda Patika.dev ve Kodluyoruz ekibiyle karşılaştım. Bootcamp
-                sürecinde çeşitli arkadaşlar edindim. Artık tek başınaymış gibi
-                hissetmiyordum.Takıldığımda birlikte çözüm aradığım arkadaşlarım
-                oldu. Bu süreçte ReactJS ile tanıştım. ReactJS üzerinden
-                ilerlemeye başladım. Daha sonra Tübisad ve TechCareer Frontend
-                bootcamp'ine kabul aldım. Ve bu eğitimi de bu projeyi
-                tamamlamamla son buluyor. Ben yeni başlayan arkadaşlara, haddime
-                olmasa da bir tavsiye vermek istiyorum. Tek başınıza ilerleyen
-                varsa bunu yapmasın. Takıldığınızda motivasyonunuz düşer ve pes
-                etme noktasına gelebilirsiniz. Yardım istemekten çekinmeyin.
-                İletişime geçmekten çekinmeyin. Ve pes etmeyin! Bana soru sormak
-                isteyen arkadaşlar hiç çekinmeden soru sorabilir. Elimden
-                geldiğince yardım ederim.
+                I can easly say that this stage was the hardest for me as a
+                self-learner. I didn't go with the stream though, I started to
+                research how can I skip the self-learning process and I found
+                about bootcamps. I started to apply to all of the programs about
+                frontend development. Finally, I came across Patika.dev and
+                Kodluyoruz team. During the Bootcamp I have initiated new
+                friendships with other frontend developer candidates. I didn't
+                feel like I was alone anymore in learinig journey. When I got
+                stuck, I had poeople around me who could always help me to look
+                for a solution. Midway this process, I met with ReactJS. I
+                decided to improve my skills also in some advice to my friends
+                who started learning alone - I can say that studying with
+                friends is better idea for the education process. When you get
+                stuck, your motivation drops and you may give up. Don't be shy
+                to ask for help and don't be shy to communicate with other
+                people. The most important thing is to Never Give Up! Friends
+                who want to ask me a question can do this without any
+                hesitation. I will make my best to give the most an adequate and
+                well-thought-out answer.
               </p>
             </article>
             <div

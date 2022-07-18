@@ -70,25 +70,14 @@
 }
 /* Carousel First Page END */
 /* Carousel Second Page START */
-
-#carouselSecondPage {
-  -webkit-text-stroke: 2px white;
-  color: white;
-  text-shadow: 5px 5px 20px black;
+#hobiesContainer img{
+  height: 100%;
+  width: 100%;
+  max-width: 350px;
+  background-color: red;
 }
-#carouselSecondPage h1 {
-  font-size: 50px;
-}
-#carouselSecondPage span {
-  color: black;
-  text-shadow: 5px 5px 20px royalblue;
-  transition: all 0.5s ease-in-out;
-  font-weight: bold;
-  -webkit-text-stroke: 2px black;
-}
-#carouselSecondPage span:hover {
-  color: white;
-  -webkit-text-stroke: 2px white;
+#carouselSecondPage{
+  height: 100vh;
 }
 /* Carousel Second Page END */
 
@@ -191,4 +180,66 @@
   box-shadow: 5px 5px 35px black;
   border: none;
   background-color: #166cb5;
+}
+#exitButtonLight{
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  z-index: 2;
+  display: none;
+}
+#exitButtonLight button{
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 10px;
+    border-bottom: 1px solid white;
+    transition: all .5s ease-in-out;
+}
+#exitButtonLight button:hover{
+  transform: scale(1.2);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 35px black;
+  border: none;
+  background-color: #166cb5;
+}
+#exitButtonDark{
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  display: none;
+  z-index: 2;
+}
+#exitButtonDark button{
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 10px;
+    border-bottom: 1px solid white;
+    transition: all .5s ease-in-out;
+}
+#exitButtonDark button:hover{
+  transform: scale(1.2);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 35px 10px #016066;
+  border: none;
+  background-color: #016066;
+}
+
+#chessLink{
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  border-bottom: 1px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  transition: all .5s ease-in-out;
+}
+#chessLink:hover{
+  transform: scale(1.2);
+  box-shadow: 5px 5px 20px white;
 }

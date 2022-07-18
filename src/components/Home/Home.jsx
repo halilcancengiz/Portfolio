@@ -1,41 +1,123 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import alertify from "alertifyjs";
 
 import "./home.css";
 import "./register.css";
 import "./login.css";
 import { useTheme } from "../../context/ThemeContext";
-import sliderSecond from "../../images/slider2.jpg";
 import sliderFirstLight from "../../images/slider1Light.jpg";
 import sliderFirstDark from "../../images/slider1Dark.jpg";
+import sliderSecond from "../../images/chess.jpg";
 
 const Home = () => {
   let { theme } = useTheme();
-
+  // Register State START
   let [registerName, setRegisterName] = useState("");
   let [registerSurname, setRegisterSurname] = useState("");
   let [registerEmail, setRegisterEmail] = useState("");
   let [registerYearOfBirt, setRegisterYearOfBirt] = useState("");
   let [registerPassword, setRegisterPassword] = useState("");
   let [registerRePassword, setRegisterRePassword] = useState("");
+  // Register State End
+  // Login State Start
+  let [loginEmail, setLoginEmail] = useState("");
+  let [loginPassword, setLoginPassword] = useState("");
+  // Login State End
 
-  // "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$" regex password
-  let passwordRgx =
-    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$/;
+  let [userLogin, setUserLogin] = useState({
+    userEmail: "userEmail@gmail.com",
+    userPassword: "userPassword",
+  });
+
+  let exitBtnFonk = () => {
+    if (theme === "dark") {
+      document.querySelector(".validationButtonDark").style.display = "block";
+      document.querySelector("#exitButtonDark").style.display = "none";
+      document.querySelector("#exitButtonDark").style.zIndex = "0";
+    } else {
+      document.querySelector(".validationButtonLight").style.display = "block";
+      document.querySelector("#exitButtonLight").style.display = "none";
+    }
+    alertify.success("Başarılı bir şekilde çıkış yapıldı. İyi günler dilerim.");
+  };
+
+  let emailValidation =
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  let passwordValidation =
+    /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[?/-_\!#+$-%&/{}[\]*])(?=.*[a-zA-Z]).{8,12}$/;
+
   let registerSubmitFonk = (e) => {
     if (
-      registerName.length == 0 ||
-      registerEmail.length == 0 ||
-      registerSurname.length == 0 ||
-      registerPassword.length == 0 ||
-      registerRePassword.length == 0 ||
-      registerYearOfBirt.length == 0
+      registerName.length === 0 ||
+      registerEmail.length === 0 ||
+      registerSurname.length === 0 ||
+      registerPassword.length === 0 ||
+      registerRePassword.length === 0 ||
+      registerYearOfBirt.length === 0
     ) {
       alertify.error("Hiç bir alan boş bırakılamaz", 2);
+    } else if (!emailValidation.test(registerEmail)) {
+      alertify.error(
+        "Lütfen formata uygun bir email girin (example@gmail.com)"
+      );
+    } else if (registerPassword !== registerRePassword) {
+      alertify.error("Password and rePassword must be the same", 2);
+    } else if (!passwordValidation.test(registerPassword)) {
+      alertify.error(
+        "Şifreniz 8-12 karakter arası, en az 1 adet büyük harf,1 adet küçük harf içermelidir",
+        2
+      );
     } else {
-      alertify.success("Tebrikler Kayıt İşlemi Başarılı", 2);
+      alertify.success("Kayıt İşlemi Başarılı Giriş Yapabilirsiniz", 2);
+      if (theme === "dark") {
+        document.querySelector(".registerModalDark").style.width = "0%";
+        document.querySelector(".registerModalDark").style.height = "0%";
+        document.querySelector(".registerModalDark").style.zIndex = "0";
+      } else {
+        document.querySelector(".registerModalLight").style.width = "0%";
+        document.querySelector(".registerModalLight").style.height = "0%";
+        document.querySelector(".registerModalLight").style.zIndex = "0";
+      }
+      if (theme === "dark") {
+        document.querySelector(".loginModalDark").style.width = "100vw";
+        document.querySelector(".loginModalDark").style.height = "100vh";
+        document.querySelector(".loginModalDark").style.zIndex = "3";
+      } else {
+        document.querySelector(".loginModalLight").style.width = "100vw";
+        document.querySelector(".loginModalLight").style.height = "100vh";
+        document.querySelector(".loginModalLight").style.zIndex = "3";
+      }
+      setUserLogin({
+        userEmail: registerEmail,
+        userPassword: registerPassword,
+      });
     }
-
+    e.preventDefault();
+  };
+  let loginSubmitFonk = (e) => {
+    if (
+      loginEmail === userLogin.userEmail &&
+      loginPassword === userLogin.userPassword
+    ) {
+      alertify.success("Giriş başarılı", 2);
+      if (theme === "dark") {
+        document.querySelector(".loginModalDark").style.width = "0%";
+        document.querySelector(".loginModalDark").style.height = "0%";
+        document.querySelector(".loginModalDark").style.zIndex = "0";
+        document.querySelector(".validationButtonDark").style.display = "none";
+        document.querySelector("#exitButtonDark").style.display = "block";
+      } else {
+        document.querySelector(".loginModalLight").style.width = "0%";
+        document.querySelector(".loginModalLight").style.height = "0%";
+        document.querySelector(".loginModalLight").style.zIndex = "0";
+        document.querySelector(".validationButtonLight").style.display = "none";
+        document.querySelector("#exitButtonLight").style.display = "block";
+      }
+      setLoginEmail("");
+      setLoginPassword("");
+    } else {
+      alertify.error("Hatalı giriş. Lütfen bilgilerinizi kontrol edin.", 2);
+    }
     e.preventDefault();
   };
 
@@ -107,6 +189,12 @@ const Home = () => {
           >
             Login
           </button>
+        </div>
+        <div
+          onClick={exitBtnFonk}
+          id={theme === "dark" ? "exitButtonDark" : "exitButtonLight"}
+        >
+          <button>Exit</button>
         </div>
         {/* Register Modal START */}
         <div
@@ -208,13 +296,18 @@ const Home = () => {
             <h2 className="text-white mb-3">
               <b>LOGIN</b>
             </h2>
-            <form className="d-flex align-items-center justify-content-center flex-column">
+            <form
+              onSubmit={loginSubmitFonk}
+              className="d-flex align-items-center justify-content-center flex-column"
+            >
               <div className="w-100 d-flex align-items-center justify-content-center flex-row">
                 <i className="fa-solid fa-at rounded-circle"></i>
                 <input
                   className="rounded-pill"
                   type="email"
                   placeholder="Your E-mail"
+                  onChange={(e) => setLoginEmail(e.target.value)}
+                  value={loginEmail}
                 />
               </div>
               <div className="w-100 d-flex align-items-center justify-content-center flex-row">
@@ -223,16 +316,30 @@ const Home = () => {
                   className="rounded-pill"
                   type="password"
                   placeholder="Password"
+                  onChange={(e) => setLoginPassword(e.target.value)}
+                  value={loginPassword}
                 />
               </div>
               <div id={theme === "dark" ? "loginDark" : "loginLight"}>
-                <a href="#">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://www.facebook.com"
+                >
                   <i className="fa-brands fa-facebook"></i>
                 </a>
-                <a href="#">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://www.github.com"
+                >
                   <i className="fa-brands fa-github"></i>
                 </a>
-                <a href="#">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://www.google.com/account/about/"
+                >
                   <i className="fa-brands fa-google"></i>
                 </a>
               </div>
@@ -251,7 +358,7 @@ const Home = () => {
           className="carousel carousel-dark slide w-100 h-100"
           data-bs-ride="carousel"
         >
-          <div className="carousel-indicators">
+          <div className="carousel-indicators m-0">
             <button
               type="button"
               data-bs-target="#carouselExampleDark"
@@ -285,10 +392,9 @@ const Home = () => {
                   className="d-flex align-items-center justify-content-center flex-column h-100 w-100"
                 >
                   <h1>
-                    {" "}
                     Hi There! <br /> Welcome To My Website. <br /> I'am{" "}
                     <span>Halil Can</span> <br /> and I'am{" "}
-                    <span>Frontend Developer</span>{" "}
+                    <span>Frontend Developer</span>
                   </h1>
                 </div>
               </div>
@@ -299,17 +405,12 @@ const Home = () => {
                 className="d-block w-100 h-100"
                 alt="..."
               />
-              <div className="carousel-caption d-flex align-items-center justify-content-center flex-column text-white h-100">
+              <div className="carousel-caption d-flex align-items-center justify-content-center flex-column text-white h-100 p-0">
                 <div
                   id="carouselSecondPage"
-                  className="d-flex align-items-center justify-content-center flex-column h-100 w-100"
+                  className="d-flex align-items-center justify-content-center flex-column h-100 w-100 "
                 >
-                  <h1>
-                    {" "}
-                    Hi There! <br /> Welcome To My Website. <br /> I'am{" "}
-                    <span>Halil Can</span> <br /> and I'am{" "}
-                    <span>Frontend Developer</span>{" "}
-                  </h1>
+                  <a id="chessLink"  target="_blank" href="https://lichess.org/@/hllcncngz">Play Chess With Me</a>
                 </div>
               </div>
             </div>

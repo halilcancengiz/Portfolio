@@ -61,7 +61,7 @@ export default function Navigation() {
             <li>
               <a
                 onClick={closeNav}
-                href={theme === "dark" ? "#aboutMeDark" : "#aboutMeLight"}
+                href="#aboutMeDark"
               >
                 <i className="fa-solid fa-id-card-clip"></i>About Me
               </a>
@@ -69,13 +69,18 @@ export default function Navigation() {
             <li>
               <a
                 onClick={closeNav}
-                href={theme === "dark" ? "#myProjectDark" : "#myProjectLight"}
+                href="#myProjectDark"
               >
                 <i className="fa-solid fa-laptop-code"></i>My Project
               </a>
             </li>
             <li>
-              <a onClick={closeNav} href="#technologies">
+              <a
+                onClick={closeNav}
+                href={
+                  theme === "dark" ? "#technologiesDark" : "#technologiesLight"
+                }
+              >
                 <i className="fa-solid fa-cubes"></i>Technologies
               </a>
             </li>
