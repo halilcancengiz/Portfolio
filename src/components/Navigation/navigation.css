@@ -57,9 +57,11 @@
   z-index: 3;
   overflow-x: hidden;
   transition: all 0.5s ease;
-  background:url('../../images/menu/menuLight.jpg') center;
+  background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.3)),url('../../images/menu/menuLight.jpg') center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-weight: 400;
+  /* -webkit-text-stroke: .8px black ; */
 
 }
 .closeBtnDark {
@@ -162,7 +164,7 @@
 /* NAVBAR LIGHT END*/
 #changeThemeDark{
   position: absolute;
-  left: 50px;
+  left: 80px;
   top: 50px;
   padding: 5px;
   border-radius: 10px;
@@ -182,15 +184,16 @@
 
 #changeThemeLight{
   position: absolute;
-  left: 50px;
+  left: 80px;
   top: 50px;
   padding: 5px;
   border-radius: 10px;
   background-color: transparent;
   color: black;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   transition: all .5s ease-in-out;
+  font-weight: 600;
 }
 #changeThemeLight:hover{
   transform: scale(1.2);
