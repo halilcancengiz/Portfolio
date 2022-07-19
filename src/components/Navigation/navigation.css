@@ -41,7 +41,7 @@
   z-index: 3;
   overflow-x: hidden;
   transition: all 0.5s ease;
-  background:url('../../images/menuDark.jpg') center;
+  background:url('../../images/menu/menuDark.jpg') center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -57,22 +57,36 @@
   z-index: 3;
   overflow-x: hidden;
   transition: all 0.5s ease;
-  background:url('../../images/menuLight.jpg') center;
+  background:url('../../images/menu/menuLight.jpg') center;
   background-repeat: no-repeat;
   background-size: cover;
 
 }
-.closeBtn {
+.closeBtnDark {
   position: absolute;
   top: 40px;
   right: 40px;
   font-size: 32px;
-  color: #42aac9;
+  color: white;
   background-color: transparent;
   border: none;
 }
-.closeBtn:hover {
+.closeBtnDark:hover {
   color: white;
+  transition: all 0.5s ease;
+  font-size: 37px;
+}
+.closeBtnLight {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 32px;
+  color: black;
+  background-color: transparent;
+  border: none;
+}
+.closeBtnLight:hover {
+  color: black;
   transition: all 0.5s ease;
   font-size: 37px;
 }
@@ -187,14 +201,4 @@
   background-color: black;
 }
 
-
-
-/* Login Button End */
-
-
-/* Register Page Modal START */
-
-/* Register Page Modal END */
-/* Login Page Modal START */
-/* Login Page Modal END */
 

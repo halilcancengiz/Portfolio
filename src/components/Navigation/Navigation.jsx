@@ -36,7 +36,7 @@ export default function Navigation() {
           (theme === "dark" ? "overlay-dark" : "overlay-light")
         }
       >
-        <button onClick={closeNav} href="#" className="closeBtn">
+        <button onClick={closeNav} href="#" className={theme==="dark"?"closeBtnDark":"closeBtnLight"}>
           <i className="fa fa-times"></i>
         </button>
         {/* Change Theme START */}

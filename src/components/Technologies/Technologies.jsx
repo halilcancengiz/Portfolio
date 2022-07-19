@@ -39,30 +39,20 @@ const Technologies = () => {
             <div className="col-lg-12 d-flex align-items-center justify-content-center flex-row mb-5">
               <div id={theme==="dark" ?"searchContainerDark":"searchContainerLight"} className="rounded-pill">
                 <i className="fa-solid fa-magnifying-glass"></i>
-                <input
-                  onChange={(e) => setSearchTechnologyValue(e.target.value)}
-                  type="text"
-                  value={searchTechnologyValue}
-                  className="text-white ms-2"
-                  id="searchTechnologyInput"
-                  placeholder="Filter technologies"
-                />
+                <input onChange={(e) => setSearchTechnologyValue(e.target.value)} type="text" value={searchTechnologyValue} className="text-white ms-2" id="searchTechnologyInput" placeholder="Filter technologies"/>
               </div>
             </div>
-
-            {filteredTechnology.map((technology) => {
+            {
+            filteredTechnology.map((technology) => {
               return (
-                <div
-                  key={technology.id}
-                  className={theme==="dark" ?"technologiesCardDark":"technologiesCardLight"}
-                >
+                <div key={technology.id} className={theme==="dark" ?"technologiesCardDark":"technologiesCardLight"} >
                   <div id="card">
                     <img src={technology.url} alt={technology.name} />
                     <p>{technology.name}</p>
                   </div>
                 </div>
-              );
-            })}
+              )})
+            }
           </div>
         </div>
       </div>

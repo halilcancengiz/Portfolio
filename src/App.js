@@ -12,18 +12,11 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Navigation from './components/Navigation/Navigation';
 
-
-
-
-
-
 function App() {
-
-  
   return (
     <ThemeProvider>
       <header>
-        <div id='navigationAndHomeContainer'>
+        <div>
           <Navigation />
           <Home />
         </div>
@@ -37,10 +30,8 @@ function App() {
       <footer>
         <Footer />
       </footer>
-
       <BackToTop />
     </ThemeProvider>
   );
 }
-
 export default App;

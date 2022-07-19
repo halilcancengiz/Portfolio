@@ -1,9 +1,8 @@
-#aboutMeDark{
+#aboutMeDark {
   /* background-color: rgb(231, 220, 220); */
-  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.3)),url('../../images/aboutmeDark.jpg') right;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),url("../../images/aboutme/aboutmeDark.jpg") right;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0;
   font-size: 19px;
   font-weight: 400;
 }
@@ -12,18 +11,12 @@
   overflow: hidden;
 }
 #questionImgContainerDark {
-  background: url("../../images/aboutmeplanet.png");
+  background: url("../../images/aboutme/aboutmeplanet.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
 }
 
-#questionImgContainer2 {
-  background-repeat: no-repeat;
-  background-size:cover;
-  border-radius: 50%;
-  
-}
 @media screen and (max-width: 1200px) {
   #questionImgContainerDark {
     display: none !important;
@@ -32,23 +25,26 @@
     display: none !important;
   }
 }
-.aboutMeContainer questionImgContainer2,
-questionImgContainer1 {
-  animation-name: backInRight;
-  animation-duration: 2s;
-}
-.pcss{
+
+.pcss {
   /* background: linear-gradient(to right,hsl(0,0%,30%) 0, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 20%,rgb(78, 72, 72) 30%); */
-  background: linear-gradient(to right,rgb(77, 77, 77) 0, white 10%, white 20% ,rgba(255, 255, 255, 0.575) 30%,rgb(90, 83, 83) 34%);
+  background: linear-gradient(
+    to right,
+    rgb(76, 76, 76) 0,
+    white 10%,
+    white 20%,
+    rgb(255, 255, 255) 30%,
+    rgb(78, 78, 78) 34%
+  );
   -webkit-background-clip: text;
-  -webkit-text-fill-color:transparent;
+  -webkit-text-fill-color: transparent;
   animation: shine 4s infinite linear;
 }
 @keyframes shine {
-  0%{
+  0% {
     background-position: 0;
   }
-  100%{
+  100% {
     background-position: 620px;
   }
 }

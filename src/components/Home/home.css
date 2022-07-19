@@ -45,38 +45,38 @@
 }
 @media screen and (max-width: 300px) {
   #carouselFirstPage h1 {
-    font-size: 1.5rem!important;
+    font-size: 1.5rem !important;
   }
 }
 @media screen and (max-width: 400px) {
   #carouselFirstPage h1 {
-    font-size: 2rem!important;
+    font-size: 2rem !important;
   }
 }
 @media screen and (max-width: 508px) {
   #carouselFirstPage h1 {
-    font-size: 2.5rem!important;
+    font-size: 2.5rem !important;
   }
 }
 @media screen and (max-width: 792px) {
   #carouselFirstPage h1 {
-    font-size: 2rem!important;
+    font-size: 2rem !important;
   }
 }
 @media screen and (max-width: 992px) {
   #carouselFirstPage h1 {
-    font-size: 3rem!important;
+    font-size: 3rem !important;
   }
 }
 /* Carousel First Page END */
 /* Carousel Second Page START */
-#hobiesContainer img{
+#hobiesContainer img {
   height: 100%;
   width: 100%;
   max-width: 350px;
   background-color: red;
 }
-#carouselSecondPage{
+#carouselSecondPage {
   height: 100vh;
 }
 /* Carousel Second Page END */
@@ -181,23 +181,23 @@
   border: none;
   background-color: #166cb5;
 }
-#exitButtonLight{
+#exitButtonLight {
   position: absolute;
   top: 50px;
   left: 150px;
   z-index: 2;
   display: none;
 }
-#exitButtonLight button{
-    color: white;
-    background-color: transparent;
-    border: none;
-    padding: 6px 15px;
-    border-radius: 10px;
-    border-bottom: 1px solid white;
-    transition: all .5s ease-in-out;
+#exitButtonLight button {
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 10px;
+  border-bottom: 1px solid white;
+  transition: all 0.5s ease-in-out;
 }
-#exitButtonLight button:hover{
+#exitButtonLight button:hover {
   transform: scale(1.2);
   color: white;
   border-radius: 10px;
@@ -205,23 +205,23 @@
   border: none;
   background-color: #166cb5;
 }
-#exitButtonDark{
+#exitButtonDark {
   position: absolute;
   top: 50px;
   left: 150px;
   display: none;
   z-index: 2;
 }
-#exitButtonDark button{
-    color: white;
-    background-color: transparent;
-    border: none;
-    padding: 6px 15px;
-    border-radius: 10px;
-    border-bottom: 1px solid white;
-    transition: all .5s ease-in-out;
+#exitButtonDark button {
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 10px;
+  border-bottom: 1px solid white;
+  transition: all 0.5s ease-in-out;
 }
-#exitButtonDark button:hover{
+#exitButtonDark button:hover {
   transform: scale(1.2);
   color: white;
   border-radius: 10px;
@@ -230,16 +230,16 @@
   background-color: #016066;
 }
 
-#chessLink{
+#chessLink {
   text-decoration: none;
   font-size: 2rem;
   color: white;
   border-bottom: 1px solid white;
   border-radius: 20px;
   padding: 10px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-#chessLink:hover{
+#chessLink:hover {
   transform: scale(1.2);
   box-shadow: 5px 5px 20px white;
 }

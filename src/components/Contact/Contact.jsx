@@ -15,14 +15,14 @@ const Contact = () => {
       contactSubjectValue.value.trim().length === 0 ||
       contactMessageValue.value.trim().length === 0
     ) {
-      alertify.error("Lütfen Tüm Belirtilen Alanları Doldurunuz",2);
+      alertify.error("Please fill in all the specified fields.",3);
     } 
     else {
       contactNameValue.value = "";
       contactEmailValue.value = "";
       contactSubjectValue.value = "";
       contactMessageValue.value = "";
-      alertify.success("Mesajınız Alınmıştır Teşekkürler",2);
+      alertify.success("Thanks for contacting me.",3);
     }
     e.preventDefault();
   };
@@ -38,13 +38,11 @@ const Contact = () => {
           <div id="contactDetails">
             <h3>Contact Details</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Consequatur, rem iure? Repudiandae sapiente odit labore aliquam
-              consequatur, aspernatur alias quibusdam.
+              By filling out the form, you can ask questions you want to ask me and you can contact me.
             </p>
             <div className="d-flex flex-row align-items-center mt-3">
               <i className="fa-solid fa-phone"></i>
-              <span>Phone:</span>
+              <span>Phone: +90 538 770 80 40</span>
             </div>
             <div className="d-flex flex-row align-items-center mt-2">
               <i className="fa-solid fa-envelope"></i>

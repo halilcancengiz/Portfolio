@@ -4,7 +4,7 @@
 }
 #contact {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
-    url("../../images/contactmeDark.jpg");
+    url("../../images/contact/contactmeDark.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -17,7 +17,8 @@
   color: white;
   transition: all 0.5s ease-in-out;
 }
-#contactDetails p,h3,
+#contactDetails p,
+h3,
 span {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
@@ -42,6 +43,7 @@ span {
   border: 2px solid gray;
   transition: all 0.5s ease-in-out;
   color: white;
+  padding-left: 20px;
 }
 #contactForm input:focus {
   border-color: #0ba8c7;
@@ -52,7 +54,6 @@ span {
 }
 #contactForm input::placeholder {
   color: white;
-  padding-left: 20px;
 }
 #contactForm textarea {
   margin-top: 10px;
@@ -61,6 +62,8 @@ span {
   transition: all 0.3s ease-in-out;
   color: white;
   resize: none;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 #contactForm textarea:focus {
   border-color: #0ba8c7;
@@ -71,8 +74,6 @@ span {
 }
 #contactForm textarea::placeholder {
   color: white;
-  padding-left: 20px;
-  padding-top: 20px;
 }
 #contactForm button {
   margin-top: 10px;
