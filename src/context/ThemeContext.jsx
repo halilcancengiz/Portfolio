@@ -15,7 +15,7 @@ export const ThemeProvider = ({ children }) => {
     }
   };
 
-  
+
 
   useEffect(() => {
     if (localStorage.getItem("mode")) {
@@ -28,8 +28,8 @@ export const ThemeProvider = ({ children }) => {
       setTheme("dark");
     }
   }, [theme]);
+  
  
-
   let values = {
     theme,
     toggleTheme,

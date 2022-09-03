@@ -12,7 +12,7 @@ const MyProject = () => {
   const [getData, setGetData] = useState("");
 
   useEffect(() => {
-    fetch("https://api.github.com/users/hllcncngz")
+    fetch("https://api.github.com/users/halilcancengiz")
       .then((res) => {
         if (res.ok) {
           return res.json();
@@ -43,7 +43,7 @@ const MyProject = () => {
                     <h3 className={theme==="dark"?"text-dark":"text-white"}>ReactJS Photo Search App </h3>
                     <div className={theme==="dark"?"headingBorder2 bg-dark":"headingBorder2 bg-white"}></div>
                     <a
-                      href="https://github.com/hllcncngz/Fotograflar-Projesi"
+                      href="https://github.com/halilcancengiz/Fotograflar-Projesi"
                       data-toggle="tooltip"
                       data-placement="top"
                       title="Projeyi İncele"
@@ -65,7 +65,7 @@ const MyProject = () => {
                     <h3 className={theme==="dark"?"text-dark":"text-white"}>Bootstrap Instagram Clone</h3>
                     <div className={theme==="dark"?"headingBorder2 bg-dark":"headingBorder2 bg-white"}></div>
                     <a
-                      href="https://github.com/hllcncngz/Bootstrap-Patika--dev/tree/master/%C4%B1nstagram-bootstrap"
+                      href="https://github.com/halilcancengiz/Bootstrap-Patika--dev/tree/master/%C4%B1nstagram-bootstrap"
                       data-toggle="tooltip"
                       data-placement="top"
                       title="Projeyi İncele"
@@ -87,7 +87,7 @@ const MyProject = () => {
                     <h3 className={theme==="dark"?"text-dark":"text-white"}>Weather App Js</h3>
                     <div className={theme==="dark"?"headingBorder2 bg-dark":"headingBorder2 bg-white"}></div>
                     <a
-                      href="https://github.com/hllcncngz/Weather"
+                      href="https://github.com/halilcancengiz/Weather"
                       data-toggle="tooltip"
                       data-placement="top"
                       title="Projeyi İncele"
